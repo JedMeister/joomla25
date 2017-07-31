@@ -1,3 +1,16 @@
+turnkey-joomla25-14.0rc (1) turnkey; urgency=low
+
+  * Includes all changes and updates from v14.2 LAMP.
+
+  * Installs deprecated and unsupported version of Joomla (2.5.28).
+
+  * Not intended for release!!!
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Tue, 01 Aug 2017 08:50:06 +1000
+
 turnkey-joomla25-13.0 (1) turnkey; urgency=low
 
   * PHPMyAdmin:

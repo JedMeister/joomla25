@@ -1,12 +1,13 @@
 #!/bin/bash -ex
 
 dl() {
-    [ "$FAB_HTTP_PROXY" ] && PROXY="--proxy $FAB_HTTP_PROXY"
-    cd $2; curl -L -f -O $PROXY $1; cd -
+    cd $3; curl -L -f $2 -o $1; cd -
 }
 
-VERSION="17968/78429/Joomla_2.5.9-Stable-Full_Package.tar.gz"
-URL="http://joomlacode.org/gf/download/frsrelease/$VERSION"
+VERSION="2-5-28"
+FILE="joomla_${VERSION}-stable-full_package.tar.gz"
+J_PATH="joomla25/${VERSION}/joomla_${VERSION}-stable-full_package-tar-gz"
+URL="https://downloads.joomla.org/cms/${J_PATH}?format=gz"
 
-dl $URL /usr/local/src
+dl $FILE $URL /usr/local/src
 
