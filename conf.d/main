@@ -13,8 +13,8 @@ WEBROOT=/var/www/joomla
 mkdir -p $WEBROOT
 
 # unpack tarball to webroot and set permissions
-tar -zxf /usr/local/src/Joomla*.tar.gz -C $WEBROOT
-rm -f /usr/local/src/Joomla*
+tar -zxf /usr/local/src/joomla*.tar.gz -C $WEBROOT
+rm -f /usr/local/src/joomla*
 chown -R www-data:www-data $WEBROOT
 
 # convenience execution variables
